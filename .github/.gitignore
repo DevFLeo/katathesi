@@ -1,0 +1,14 @@
+# Ignorar configurações de banco de dados com senhas reais
+/config/database.yml
+
+# Ignorar arquivos de variáveis de ambiente
+.env
+.env.local
+# Ignorar arquivos de log
+/log/*.log
+
+#ignorar dados de banco de dados
+/db/*.sqlite3
+/db/*.sqlite3-journal
+# Ignorar arquivos de configuração específicos do ambiente
+/config/environments/*.rb
