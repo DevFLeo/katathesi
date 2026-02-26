@@ -59,3 +59,9 @@ group :test do
 end
 
 gem "tailwindcss-rails"
+
+# Para gráficos no dashboard
+gem "chartkick"
+
+# Para facilitar agrupamentos por data (ex: receitas por mês)
+gem "groupdate"

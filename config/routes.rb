@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :transactions
+  resources :products
   get "pages/home"
   # A Landing Page será a porta de entrada principal
   root "pages#home"

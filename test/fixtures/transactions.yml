@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  value: 9.99
+  category: MyString
+  kind: 1
+  frequency: 1
+  date: 2026-02-25
+  profit_margin: 9.99
+
+two:
+  description: MyString
+  value: 9.99
+  category: MyString
+  kind: 1
+  frequency: 1
+  date: 2026-02-25
+  profit_margin: 9.99

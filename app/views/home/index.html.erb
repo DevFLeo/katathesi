@@ -1,3 +1,19 @@
+<%# app/views/home/index.html.erb %>
+<%# Essa função precisa estar no topo para não quebrar a renderização do restante da página %>
+<div class="filters">
+  <%= link_to "Mês", dashboard_path(period: "month"), class: ("active" if @period == "month") %>
+  <%= link_to "Semestre", dashboard_path(period: "semester"), class: ("active" if @period == "semester") %>
+  <%= link_to "Ano", dashboard_path(period: "year"), class: ("active" if @period == "year") %>
+</div>
+
+<div class="card">
+  <h3>Total Receita</h3>
+  <p><%= number_to_currency @total_receita %></p>
+  <span class="<%= @variacao_receita >= 0 ? 'text-success' : 'text-danger' %>">
+    <%= number_to_percentage @variacao_receita, precision: 1 %> vs mês anterior
+  </span>
+</div>
+
 <div class="min-h-screen bg-slate-50 flex">
   <aside class="w-64 bg-[#1a1a1a] text-slate-300 flex flex-col hidden md:flex border-r border-[#b8860b]/20">
     <div class="p-6 text-white font-bold text-2xl tracking-tight border-b border-slate-800">
