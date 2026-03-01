@@ -1,5 +1,6 @@
 <%# app/views/home/index.html.erb %>
 <%# Essa função precisa estar no topo para não quebrar a renderização do restante da página %>
+<%# Ela é responsável por formatar os valores monetários de forma consistente em toda a aplicação %>
 <div class="filters">
   <%= link_to "Mês", dashboard_path(period: "month"), class: ("active" if @period == "month") %>
   <%= link_to "Semestre", dashboard_path(period: "semester"), class: ("active" if @period == "semester") %>
